@@ -1,2 +1,2 @@
 # blog
-simple blog build with react
+simple blog built with react
