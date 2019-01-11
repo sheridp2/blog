@@ -4,7 +4,7 @@ const bodyParser = require("body-parser");
 const keys = require("./config/prod");
 require("./models/Blogs");
 
-mongoose.connect(prod.mongoURI);
+mongoose.connect(keys.mongoURI);
 
 const app = express();
 app.use(bodyParser.json())
