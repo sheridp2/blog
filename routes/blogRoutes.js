@@ -11,6 +11,13 @@ module.exports = app => {
       dateCreated: Date.now()
     })
     await blog.save();
+    const allBlogs = await Blog.find()
+    res.send(allBlogs)
 
   })
+  app.get("/allposts", async (req, res) =>{
+    const allBlogs = await Blog.find()
+    res.send(allBlogs)
+  })
+
 };
