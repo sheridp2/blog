@@ -11,7 +11,5 @@ app.use(bodyParser.json())
 
 require("./routes/blogRoutes")(app);
 
-const port = 8080;
-app.listen(port, () => {
-  console.log("Localhost " + port);
-});
+const PORT = process.env.PORT || 5000;
+app.listen(PORT)
